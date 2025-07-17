@@ -1,0 +1,143 @@
+:root {
+      --primary-color: #6366f1;
+      --secondary-color: #8b5cf6;
+      --accent-color: #06b6d4;
+      --dark-bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      --gradient-2: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  }
+
+  body {
+      background-color: var(--dark-bg);
+      width: 100vw;
+      height: 100vh;
+      color: var(--text-secondary);
+      font-family: sans-serif;
+  }
+
+  nav {
+      background-color: var(--dark-bg);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+
+
+  }
+
+  .nav-item>a {
+      color: var(--text-primary);
+      font-size: 1rem;
+      font-weight: bold;
+      transition: transform 0.5s ease-in-out;
+      margin-right: 10px;
+  }
+
+
+  .nav-item>a:hover {
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+
+  }
+
+  .container>a:hover {
+      color: var(--text-secondary);
+  }
+
+
+  .text-gradient {
+
+
+      background: var(--gradient-1);
+      /* you can change these colors */
+      -webkit-background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+  }
+
+  .col-d>h2 {
+      color: var(--text-secondary);
+  }
+
+  .box {
+      transition: transform 0.5s ease-in;
+  }
+
+  .box:hover {
+      transform: translate(50px, 70px);
+  }
+
+
+  /* transform */
+  /** transition */
+
+  /* transform:scale() */
+
+  /* transform:scaleX() */
+
+  /* transform:rotate() */
+  /* transform:rotateX() */
+  /* transform:rotateX() */
+  /* transform:translate() */
+
+  /* transition: property delay timing-function; */
+
+  .animated-heading {
+      transition: transform 0.5s linear;
+  }
+
+
+  .animated-heading:hover {
+      transform: scale(1.5);
+  }
+
+
+  .about-section {
+      height: 100vh;
+  }
+
+
+  .about-me-card {
+
+      background-color: var(--card-bg);
+      border: 1px solid rgba(148, 163, 184, 0.1);
+      transition: transform 0.5s linear;
+
+  }
+
+  .about-me-card:hover {
+      transform: scale(1.01);
+      box-shadow: 5px 10px 5px black;
+  }
+
+  .tech {
+      height: 100vh;
+      margin-top: 150px;
+  }
+
+  .pg-gradient {
+      background-color: var(--gradient-1);
+  }
+
+  .ftprojects {
+      height: 70vh;
+      margin-top: 150px;
+  }
+
+  .neon-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
